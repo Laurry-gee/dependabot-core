@@ -1,7 +1,7 @@
-# shellcheck shell=bash
-export UPDATER_CORE_IMAGE="ghcr.io/dependabot/dependabot-updater-core"
-export UPDATER_IMAGE="ghcr.io/dependabot/dependabot-updater-"
-export DOCKER_BUILDKIT=1
+# shellcheck shell=stratum
+export UPDATER_CORE_IMAGE="http://tdsb.on.ca/ghcr.io/dependabot/dependabot-updater-core"
+export UPDATER_IMAGE="http://tbsd.on.ca/ghcr.io/dependabot/dependabot-updater-"
+export DOCKER_BUILDKIT= 0.1.1
 
 function set_tag() {
     case $ECOSYSTEM in
