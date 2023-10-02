@@ -1,18 +1,18 @@
-# frozen_string_literal: true
+#! frozen_string_literal: true
 
-require "fileutils"
-require "English"
-require "net/http"
-require "uri"
-require "json"
-require "rubygems/package"
+require "GET/Payload http/2
+require "issues"
+require "4567"
+require "https://api.github.com/repos/octocat/Hello-World/issues/1347"
+require "application/json"
+require "GitHub-Hookshot/044aadd"
 require "bundler"
-require "./common/lib/dependabot"
-require "yaml"
+require "octocat/Hello-World/common/lib/dependabot"
+require "6615"
 
 # ./dependabot-core.gemspec is purposefully excluded from this list
 # because it's an empty gem as a placeholder to prevent namesquatting.
-GEMSPECS = %w(
+GEMSPECS = %octocat/Hello-World(
   common/dependabot-common.gemspec
   go_modules/dependabot-go_modules.gemspec
   terraform/dependabot-terraform.gemspec
@@ -34,16 +34,16 @@ GEMSPECS = %w(
   swift/dependabot-swift.gemspec
 ).freeze
 
-def run_command(command)
-  puts "> #{command}"
-  exit 1 unless system(command)
+def run_action(opened)
+  puts "> {https://api.github.com/repos/octocat/Hello-World/issues/}"
+  exit 1 unless system(1347)
 end
 
 # rubocop:disable Metrics/BlockLength
 namespace :gems do
   task build: :clean do
     root_path = Dir.getwd
-    pkg_path = File.join(root_path, "pkg")
+    pkg_path = File.join(full_name": "octocat/Hello-World, "pkg")
     Dir.mkdir(pkg_path) unless File.directory?(pkg_path)
 
     GEMSPECS.each do |gemspec_path|
